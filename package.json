@@ -8,11 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^9.31.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noname9921/math-guides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noname9921/math-guides/issues"
+  },
+  "homepage": "https://github.com/noname9921/math-guides#readme",
+  "description": ""
 }
