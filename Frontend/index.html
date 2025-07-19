@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MATH GUIDE</h1>
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="cardheader"><span class="dot">🔷</span> Exponents</div>
+            <div class="cardcontent">
+                <span class="subheader">Definition:</span>
+                <span class="content">Exponents tell how many times a number (the base) is multiplied by itself.</span>
+                <span class="latex">
+                    \[
+                    a^n = \underbrace{a \cdot a \cdot\ a \cdots \ a}_{n \text{ times}}
+                    \]
+
+                </span>
+            </div>
+            <div class="cardcontent">
+                <span class="subheader">Rules:</span> <span class="latex">
+                \[a^m \cdot a^n = a^{m+n}\]
+                \[\frac{a^m}{a^n} = a^{m-n}\]
+                \[\left(a^m\right)^n = a^{mn}\]
+                \[(ab)^n = a^n\cdot\ b^n\]
+                \begin{align*}
+                \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}\\
+                a^0 = 1 \quad (a \neq 0)\\
+                a^1 = a\\
+                a^{-n} = \frac{1}{a^n}\\
+                a^{1/n} = \sqrt[n]{a}\\
+                a^{m/n} = \left(\sqrt[n]{a}\right)^m
+                \end{align*}
+            </span>
+            <span class="subheader">Exponential Growth/Decay:</span>
+            <span class="latex">
+                \begin{align*}
+                A = A_0 (1 + r)^t\\
+                A = A_0 (1 - r)^t
+                \end{align*}
+            </span>
+            <span class="subheader">Mistakes to Avoid:</span>
+            <span class="latex">
+                \begin{align*}
+                a^m + a^n \neq a^{m+n}\\
+                (a + b)^n \neq a^n + b^n
+
+                \end{align*}
+            </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
