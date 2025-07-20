@@ -10,8 +10,7 @@
     --gradient-accent-end: #B440F7;
     --card-width: 650px;
 }
-.dot{
-    filter: 
+.dot{ 
 }
 h1{
     color: var(--text-title);
@@ -22,14 +21,14 @@ h1{
 body {
     background: linear-gradient(90deg, var(--bg-gradient-start), var(--bg-gradient-end));
     font-family: Montserrat;
+    position: relative;
+    min-height: 100vh;
 }
 .card-wrapper {
     max-width: var(--card-width);
     width: 90vw;
     position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%)
+    margin: 0px auto;
 }
 .card {
     width: 100%;
@@ -70,25 +69,22 @@ body {
     inherits: false;
 }
 .card-wrapper::after, .card-wrapper::before {
+    position: absolute;
     opacity: 1;
     visibility: visible;
     content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
     background-image: conic-gradient(from var(--angle), var(--gradient-accent-start), var(--gradient-accent-end), var(--gradient-accent-start));
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-right: 3.25px;
-    padding-left: 3px;
-    padding-top: 3.5px;
-    padding-bottom: 3.5px;
     z-index: -1;
     border-radius: 12px;
     opacity: 0;
     transition: opacity ease-in-out 0.3s;
 }
+
+
 .card-wrapper::before{
     filter: blur(1.5rem);
 }
